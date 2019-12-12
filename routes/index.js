@@ -3,4 +3,7 @@ const router = express.Router();
 const homeController = require('../controllers/home_controller');
 
 router.get('/', homeController.home);
+router.get('/contacts', homeController.contacts);
+router.use('/users', require('./users'));
+router.use('/messages', require('./messages'));
 module.exports = router;
