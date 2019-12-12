@@ -1,7 +1,11 @@
 module.exports.home = function(req,res){
-    res.send("<h1>Hello World!</h1>");
+    return res.render('home', {
+        title: "Home"
+    });
 }
 module.exports.contacts = function(req,res){
-    res.send("<h1>Welcome to Contacts!</h1>");
+    res.render('contacts', {
+        title:"Contacts"
+    });
 }
 // module.exports.actionNmae = function(req, res){}

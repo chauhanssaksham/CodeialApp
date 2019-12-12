@@ -1,9 +1,15 @@
 module.exports.profile = function(req, res){
-    res.send('<h1>User Profile</h1>');
+    res.render('./users/profile', {
+        title:"Users Profile"
+    });
 }
 module.exports.home = function(req, res){
-    res.send("<h1>Users home</h1>");
+    res.render('./users/home', {
+        title:"Users Home"
+    });
 }
 module.exports.posts = function(req,res){
-    res.send('<h1>Users/ Posts!</h1>');
+    res.render('./users/posts', {
+        title:"Users Posts"
+    });
 }
