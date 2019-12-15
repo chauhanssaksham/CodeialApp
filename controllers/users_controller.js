@@ -17,13 +17,13 @@ module.exports.posts = function(req,res){
 }
 //render the sign up page
 module.exports.signup = function(req, res){
-    return res.render('user_sign_up',{
+    return res.render('users/user_sign_up',{
         title: "Codeial Sign up"
     });
 }
 //render the sign in page
 module.exports.singin = function(req, res){
-    return res.render('user_sign_in',{
+    return res.render('users/user_sign_in',{
         title: "Codeial Sign In"
     });
 }
